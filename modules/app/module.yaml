@@ -1,0 +1,18 @@
+name: app
+version: 1.0
+
+packages:
+   install:
+      - java-1.8.0-openjdk-devel
+
+artifacts:
+    - name: application
+      from: builder
+      path: /path/to/application/inside/the/builder/image.jar
+
+    - name: lib
+      from: builder
+      path: /path/to/lib.jar
+
+execute:
+    - script: install.sh

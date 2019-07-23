@@ -1,0 +1,6 @@
+name: jre8
+version: 1.0
+
+packages:
+   install:
+      - java-1.8.0-openjdk
